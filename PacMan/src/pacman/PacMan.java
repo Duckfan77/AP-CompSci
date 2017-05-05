@@ -94,21 +94,19 @@ public class PacMan extends JPanel{
         }
    }
    
-    public void setUpComponents(){
-        BlueGhost blue = new BlueGhost();
-        GHOSTS.add(blue);
-          
-        JFrame window = new JFrame("Machine Learning Ghosts");
-        // Set this window's location and size:
-        window.setBounds(0, 0, 906, 682);
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Container c = window.getContentPane();
-        c.add(this);
-        window.setResizable(false);
-        window.setVisible(true);
-        // set-up timer, the object responding is timerListener
-        clock = new Timer(250,new timerListener());
-        clock.start();
+      public void setUpComponents(){
+      
+       JFrame window = new JFrame("Machine Learning Ghosts");
+       // Set this window's location and size:
+       window.setBounds(0, 0, 906, 682);
+       window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       Container c = window.getContentPane();
+       c.add(this);
+       window.setResizable(false);
+       window.setVisible(true);
+       // set-up timer, the object responding is timerListener
+       clock = new Timer(250,new timerListener());
+       clock.start();
              
   }
   
